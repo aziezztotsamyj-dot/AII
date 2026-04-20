@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гений AI</title>
+
+    <!-- CSS қосу -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Гений AI</h1>
+</header>
+
+<!-- Режим -->
+<section class="mode-section">
+    <select id="mode">
+        <option value="simple">Қарапайым</option>
+        <option value="smart">Ақылды</option>
+        <option value="super">Супер</option>
+        <option value="ultra">Ультра</option>
+    </select>
+</section>
+
+<!-- Карточкалар -->
+<section class="cards">
+    <div class="card">Код генерациясы</div>
+    <div class="card">Идея генерациясы</div>
+    <div class="card">Түсіндіру</div>
+</section>
+
+<!-- Тәжірибе -->
+<section class="experience">
+    <h2>Менің тәжірибем</h2>
+    <p>Бұл жерде сенің жетістіктерің болады</p>
+</section>
+
+<!-- Счетчик -->
+<div class="counter">
+    Сұраныстар саны: <span id="count">0</span>
+</div>
+
+<!-- Чат -->
+<section class="chat">
+    <div id="chatBox"></div>
+
+    <input type="text" id="userInput" placeholder="Сұраныс жаз...">
+    <button id="sendBtn">Жіберу</button>
+</section>
+
+<!-- Сурет генерация -->
+<section class="image-gen">
+    <h2>Сурет генерациясы</h2>
+    <input type="text" id="imgPrompt" placeholder="Сурет сипаттамасы">
+    <button id="imgBtn">Сурет жасау</button>
+
+    <div id="imageResult"></div>
+</section>
+
+<!-- JS қосу -->
+<script src="script.js"></script>
+
+</body>
+</html>

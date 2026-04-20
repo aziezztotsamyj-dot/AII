@@ -1,0 +1,81 @@
+body {
+    font-family: Arial;
+    background: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background: gold;
+    padding: 20px;
+}
+
+.mode-section {
+    margin: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff8dc;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    animation: fade 1s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: gold;
+}
+
+.chat {
+    margin: 20px;
+}
+
+#chatBox {
+    border: 1px solid gold;
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: orange;
+}
+
+.image-gen {
+    margin: 20px;
+}
+
+#imageResult img {
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+/* Анимация */
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+    }
+}
